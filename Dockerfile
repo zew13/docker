@@ -24,7 +24,6 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org; \
 pip3.6 install virtualenv autopep8 trash-cli;\
 cp /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime;\
 pip2 install hg-git ;\
-curl https://getcaddy.com | bash;\
 cnpm install -g pngquant-bin image-webpack-loader webpack webpack-dev-server gulp;
 
 COPY vimrc /etc/vim/vimrc.local
