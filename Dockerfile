@@ -57,4 +57,5 @@ USER ol
 WORKDIR /home/ol
 RUN virtualenv .py3env
 
+USER root
 ENTRYPOINT ["/etc/rc.local"]
