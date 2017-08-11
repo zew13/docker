@@ -47,11 +47,13 @@ COPY data/root/.bashrc /root/.bashrc
 #COPY requirement.txt /tmp/requirement.txt
 #RUN /home/ol/.py3env/bin/pip install -r /tmp/requirement.txt
 
-RUN cp /root/.bashrc /home/ol/.bashrc;chown ol:ol /home/ol/.bashrc;
 
 USER ol
 
 WORKDIR /home/ol
+
+COPY data/root/.bashrc /home/ol/.bashrc
+
 RUN virtualenv .py3env
 
 USER root
