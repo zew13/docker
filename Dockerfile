@@ -41,7 +41,7 @@ COPY install.sh /tmp/install.sh
 
 RUN /tmp/install.sh;rm /tmp/install.sh
 
-COPY /data/* /
+COPY data/* /
 
 
 
