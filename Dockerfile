@@ -7,7 +7,7 @@ COPY resolv.conf /etc/resolv.conf
 
 RUN apt-get update ; \
 apt-get upgrade -y;\
-apt-get -y install supervisor cron locales \
+apt-get -y install supervisor cron locales mlocate \
 rsyslog tzdata libpng-dev dh-autoreconf ctags \
 mercurial autoconf automake libtool nasm make pkg-config git \
 openssh-server libpython-dev python-dev \
@@ -24,6 +24,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org; \
 pip3.6 install virtualenv autopep8 trash-cli;\
 cp /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime;\
 pip2 install hg-git ;\
+updatedb ;\
 cnpm install -g pngquant-bin image-webpack-loader webpack webpack-dev-server gulp;
 
 COPY vimrc /etc/vim/vimrc.local
