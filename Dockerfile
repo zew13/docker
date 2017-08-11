@@ -49,8 +49,6 @@ COPY /data/* /
 
 RUN cp /root/.bashrc /home/ol/.bashrc;chown ol:ol /home/ol/.bashrc;
 
-COPY rc.local /etc/rc.local
-
 USER ol
 
 WORKDIR /home/ol
