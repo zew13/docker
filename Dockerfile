@@ -54,7 +54,6 @@ WORKDIR /home/ol
 
 COPY data/root/.bashrc /home/ol/.bashrc
 
-RUN virtualenv .py3env
 
 USER root
 ENTRYPOINT ["/etc/rc.local"]
