@@ -12,8 +12,8 @@
 # By default this script does nothing.
 
 # rsyslogd
-/etc/init.d/cron start
 ulimit -c 0
+/etc/init.d/cron start
 /etc/init.d/supervisor start
 /etc/init.d/ssh start
 exit 0
