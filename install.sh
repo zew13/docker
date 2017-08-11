@@ -1,5 +1,9 @@
 #!/bin/bash
 
+USER_PID=6188
+groupadd -g $USER_PID dev
+useradd -u $USER_PID -g $USER_PID -s /bin/bash -m dev
+
 USER_PID=5188
 groupadd -g $USER_PID ol
 useradd -u $USER_PID -g $USER_PID -s /bin/bash -m ol
