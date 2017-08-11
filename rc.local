@@ -14,6 +14,5 @@
 # rsyslogd
 ulimit -c 0
 /etc/init.d/cron start
-/etc/init.d/supervisor start
-/etc/init.d/ssh start
+exec supervisord -n -c /etc/supervisor/supervisord.conf
 exit 0
